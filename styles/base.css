@@ -1,12 +1,18 @@
 body {
     display: grid;
-    grid-template: auto 50px 20px 70% 20px auto / auto;
+    grid-template: auto 20px 70% 20px auto / auto;
     background-color: rgb(222, 222, 222);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
     grid-column: 1 / 7;
+    display: grid;
+    grid-template-rows: auto 50px;
+    background-color: #067671;
+}
+
+.headertitle {
     padding: 1rem;
     background-color: #067671;
     color: white;
@@ -16,24 +22,7 @@ h1 {
     text-align: center;
 }
 
-nav a:link {
-    text-decoration: none;
-    color: white;
-}
-
-nav a:visited {
-    text-decoration: none;
-    color: #A2D9CE;
-}
-
-nav a:hover {
-    text-decoration: none;
-    color: #F5B7B1;
-    cursor: grab;
-}
-
 .nav-bar {
-    grid-column: 1 / 7;
     background-color: #043D3B;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,6 +40,23 @@ nav a:hover {
     float: left;
     padding-top: 1rem;
     text-align: center;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #F5B7B1;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #F9E79F;
+    cursor: grab;
+    font-style: oblique;
 }
 
 .spacer {
@@ -140,11 +146,12 @@ main {
 
 .card li {
     padding: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card a:link {
     text-decoration: none;
-    color: black;
+    color: #138D75;
 }
 
 .card a:visited {
