@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Elaine Henson</title>
+    <meta description="Elaine Henson's Home Page for WDD 131 - Dynamic Web Fundamentals.">
+    <meta author="Elaine Henson">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Elaine Henson</h1>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/elaine-henson">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/">iLearn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng">Favourite
+                    Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <div class="spacer"></div>
+    <main>
+        <section class="card" id="main-section">
+            <h2>About Me</h2>
+            <div id="profile">
+                <p>My name is Elaine Henson</p>
+                <img src="images/profile.webp" alt="Photo of Elaine">
+            </div>
+            <div id="place">
+                <img src="images/camel.webp" alt="Photo of Camel on Dunes in Abu Dhabi">
+                <div>
+                    <h3>Abu Dhabi</h3>
+                    <p>I have lived in Abu Dhabi for nearly 2 years now.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="aside-section">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com">w3schools</a></li>
+                <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+                <li><a href="https://www.w3docs.com">W3Docs</a></li>
+                <li><a href="https://htmlcolorcodes.com">HTML Colour Codes</a></li>
+            </ul>
+        </section>
+    </main>
+    <div class="spacer"></div>
+    <footer>
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; &#127802; &nbsp; &nbsp; Elaine Henson
+            &nbsp;
+            &nbsp; &#127802; &nbsp; &nbsp; Abu Dhabi</p>
+        <p>This document was last modified on <span id="lastmodified"></span></p>
+    </footer>
 </body>
+
 </html>

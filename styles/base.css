@@ -1,0 +1,166 @@
+body {
+    display: grid;
+    grid-template: auto 50px 20px 70% 20px auto / auto;
+    background-color: rgb(222, 222, 222);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    grid-column: 1 / 7;
+    padding: 1rem;
+    background-color: #067671;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #A2D9CE;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #F5B7B1;
+    cursor: grab;
+}
+
+.nav-bar {
+    grid-column: 1 / 7;
+    background-color: #045450;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1rem;
+}
+
+.nav-bar a {
+    float: left;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.spacer {
+    background-color: rgb(222, 222, 222);
+    grid-column: 1 / 7;
+}
+
+main {
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 79% 2% 19%;
+    background-color: rgb(222, 222, 222);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 99%;
+    justify-self: center;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 80px auto;
+    background-color: rgba(256, 256, 256, 1);
+    border-radius: 30px;
+    border: black 1px solid;
+}
+
+.card h2 {
+    text-align: center;
+    background-color: turquoise;
+    padding: 1rem;
+    margin: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#main-section {
+    grid-column: 1 / 2;
+    text-align: left;
+}
+
+#profile {
+    display: grid;
+    grid-template: auto / 40% 60%;
+    padding: 1rem;
+}
+
+#profile img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#profile p {
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+#place {
+    display: grid;
+    grid-template: 70% 30%;
+    padding: 1rem;
+}
+
+#place p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#place img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#aside-section {
+    grid-column: 3 / 4;
+}
+
+#aside-section ul {
+    list-style-type: none;
+    Padding: 1rem;
+}
+
+.card li {
+    padding: 1rem;
+}
+
+.card a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:visited {
+    text-decoration: none;
+    color: #138D75;
+}
+
+.card a:hover {
+    color: #EC7063;
+    cursor: grab;
+}
+
+footer {
+    grid-column: 1 / 7;
+    padding: 1rem 1rem 6rem 1rem;
+    text-align: center;
+    background-color: #067671;
+    color: white;
+}
