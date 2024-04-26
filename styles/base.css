@@ -71,7 +71,7 @@ main {
 .card {
     display: grid;
     grid-template-rows: 80px auto;
-    background-color: rgba(256, 256, 256, 1);
+    background-color: white;
     border-radius: 30px;
     border: black 1px solid;
 }
@@ -115,7 +115,7 @@ main {
 
 #place {
     display: grid;
-    grid-template: 70% 30%;
+    grid-template: auto / 50% 50%;
     padding: 1rem;
 }
 
@@ -149,7 +149,7 @@ main {
 
 .card a:visited {
     text-decoration: none;
-    color: #138D75  ;
+    color: #138D75;
 }
 
 .card a:hover {
