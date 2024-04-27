@@ -26,6 +26,7 @@ h1 {
     background-color: #043D3B;
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
 }
 
 .nav-bar ul {
@@ -59,7 +60,7 @@ nav a:hover {
     font-style: oblique;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     main {
         grid-column: 1/7;
         display: grid;
@@ -73,7 +74,7 @@ nav a:hover {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     main {
         grid-column: 1/7;
         background-color: rgb(222, 222, 222);
@@ -81,6 +82,12 @@ nav a:hover {
         justify-self: center;
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-bar {
+        font-size: medium;
     }
 }
 
