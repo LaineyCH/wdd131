@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: auto 70% auto / auto;
+    grid-template: auto 80% auto / auto;
     background-color: rgb(222, 222, 222);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
