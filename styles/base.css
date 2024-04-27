@@ -10,6 +10,10 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
+    .nav-bar {
+        font-size: large;
+    }
 }
 
 @media (max-width: 900px) {
@@ -21,9 +25,13 @@
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
+    .nav-bar {
+        font-size: large;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .nav-bar {
         font-size: medium;
     }
