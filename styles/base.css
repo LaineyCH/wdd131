@@ -78,9 +78,9 @@ nav a:hover {
 
 @media (max-width: 800px) {
     main {
+        grid-column: 1/7;
         background-color: rgb(222, 222, 222);
         font-family: Georgia, 'Times New Roman', Times, serif;
-        max-width: 99%;
         justify-self: center;
     }
 }
