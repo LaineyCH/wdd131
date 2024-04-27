@@ -1,18 +1,12 @@
-@media (min-width: 900px) {
-    main {
-        grid-column: 1/7;
-        display: grid;
-        grid-template-columns: 79% 2% 19%;
-        background-color: rgb(222, 222, 222);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        max-width: 99%;
-        justify-self: center;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-
+@media (max-width: 375px) {
     .nav-bar {
-        font-size: large;
+        font-size: small;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-bar {
+        font-size: medium;
     }
 }
 
@@ -31,15 +25,21 @@
     }
 }
 
-@media (max-width: 450px) {
-    .nav-bar {
-        font-size: medium;
+@media (min-width: 900px) {
+    main {
+        grid-column: 1/7;
+        display: grid;
+        grid-template-columns: 79% 2% 19%;
+        background-color: rgb(222, 222, 222);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        max-width: 99%;
+        justify-self: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
-}
 
-@media (max-width: 375px) {
     .nav-bar {
-        font-size: small;
+        font-size: large;
     }
 }
 
