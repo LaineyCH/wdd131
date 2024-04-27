@@ -1,9 +1,14 @@
+/* This website changes dynamically according to the viewport size, with the main section content
+    appearance changing for smaller viewports to make it more readable */
+
 body {
     display: grid;
     grid-template: auto 80% auto / auto;
     background-color: rgb(222, 222, 222);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* Header - includes Nav Bar */
 
 header {
     grid-column: 1 / 7;
@@ -55,10 +60,13 @@ nav a:visited {
 
 nav a:hover {
     text-decoration: none;
+    /*removed bullets*/
     color: #F9E79F;
     cursor: grab;
     font-style: oblique;
 }
+
+/* All Cards on page - includes Card Heading */
 
 .card {
     display: grid;
@@ -84,11 +92,12 @@ nav a:hover {
     margin: 10px;
 }
 
-
 #main-section {
     grid-column: 1 / 2;
     text-align: left;
 }
+
+/* The Main Card, excluding heading */
 
 #profile {
     padding-top: 1rem;
@@ -120,6 +129,8 @@ nav a:hover {
     grid-row: 1 / 2;
 }
 
+/* The right side Card, excluding heading */
+
 #aside-section {
     grid-column: 3 / 4;
 }
@@ -149,6 +160,7 @@ nav a:hover {
     cursor: grab;
 }
 
+/* Footer */
 footer {
     grid-column: 1 / 7;
     padding: 1rem 1rem 6rem 1rem;
@@ -157,6 +169,7 @@ footer {
     color: white;
 }
 
+/* Formatting for small mobile phones */
 @media (max-width: 350px) {
     .nav-bar {
         font-size: small;
@@ -167,6 +180,7 @@ footer {
     }
 }
 
+/* Formatting for large mobile phones */
 @media (max-width: 450px) {
     .nav-bar {
         font-size: medium;
@@ -175,9 +189,9 @@ footer {
     .card img {
         max-width: 50%;
     }
-
 }
 
+/* Formatting for large view ports above 900px wide */
 @media (min-width: 900px) {
     main {
         grid-column: 1/7;
@@ -202,6 +216,7 @@ footer {
     }
 }
 
+/* Formatting for larger view ports less than 900px wide */
 @media (max-width: 900px) {
     main {
         grid-column: 1/7;
@@ -220,5 +235,4 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
