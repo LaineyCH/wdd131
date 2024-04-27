@@ -123,6 +123,7 @@ nav a:hover {
     color: #E74C3C;
     text-align: center;
     font-size: x-large;
+    border-bottom: 2px solid #117A65;
 }
 
 #place p {
