@@ -119,6 +119,12 @@ nav a:hover {
     padding-left: 2rem;
 }
 
+#place h3 {
+    color: #E74C3C;
+    text-align: center;
+    font-size: x-large;
+}
+
 #place p {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
