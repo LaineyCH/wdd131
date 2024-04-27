@@ -106,7 +106,9 @@ main {
 #profile {
     display: grid;
     grid-template: auto / 45% 55%;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #profile img {
@@ -122,7 +124,7 @@ main {
 #place {
     display: grid;
     grid-template: auto / 60% 40%;
-    padding: 1rem;
+    padding-left: 2rem;
 }
 
 #place p {
@@ -146,7 +148,7 @@ main {
 
 .card li {
     padding: 1rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card a:link {
