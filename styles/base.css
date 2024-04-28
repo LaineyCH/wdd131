@@ -25,7 +25,6 @@ h1 {
     text-align: center;
     font-family: "Platypi", serif;
     font-weight: 700;
-    font-style: normal;
 }
 
 .nav-bar {
@@ -33,7 +32,6 @@ h1 {
     text-align: justify;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
     font-size: large;
 }
 
@@ -47,7 +45,7 @@ h1 {
 
 .nav-bar a {
     float: left;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     text-align: center;
 }
 
@@ -165,7 +163,6 @@ main {
     text-align: justify;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
 }
 
 .card a:link {
