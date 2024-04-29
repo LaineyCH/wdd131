@@ -43,12 +43,6 @@ nav a {
     margin-left: auto;
 }
 
-nav a:hover {
-    background-color: pink;
-    color: black;
-    font-weight: 700;
-}
-
 main {
     display: block;
     margin-left: auto;
@@ -63,7 +57,7 @@ h2 {
 #temples {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     /* Centering the section */
 }
@@ -73,7 +67,7 @@ h2 {
 }
 
 .temple-img {
-    max-width: 80%;
+    max-width: 90%;
     display: block;
     margin: 1rem auto;
 }
@@ -92,6 +86,12 @@ footer {
 
 .open a {
     display: block;
+}
+
+nav.open a:hover {
+    background-color: pink;
+    color: black;
+    font-weight: 700;
 }
 
 .active {
