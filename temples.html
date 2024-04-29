@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Week02 - Temple Album">
+    <meta name="author" content="Elaine Henson">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <title>Temple Album</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul><a href='#'>Home</a></ul>
+            <ul><a href='#' class="active">Old</a></ul>
+            <ul><a href='#'>New</a></ul>
+            <ul><a href='#'>Large</a></ul>
+            <ul><a href='#'>Small</a></ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="currentPageHeading">Old</h2>
+        <section id="temples">
+            <figure id="temple-1" class="temple-figure">
+                <img id="temple-img1" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap1" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-2" class="temple-figure">
+                <img id="temple-img2" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap2" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-3" class="temple-figure">
+                <img id="temple-img3" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap3" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-4" class="temple-figure">
+                <img id="temple-img4" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap4" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-5" class="temple-figure">
+                <img id="temple-img5" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap5" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-6" class="temple-figure">
+                <img id="temple-img6" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap6" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-7" class="temple-figure">
+                <img id="temple-img7" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap7" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-8" class="temple-figure">
+                <img id="temple-img8" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap8" class="temple-caption">London England Temple</figcaption>
+            </figure>
+            <figure id="temple-9" class="temple-figure">
+                <img id="temple-img9" class="temple-img" src="images/london-temple.webp" alt="London England Temple">
+                <figcaption id="cap9" class="temple-caption">London England Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <!--Get current year and display with copyright information-->
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; &#127802; &nbsp; &nbsp; Elaine Henson
+            &nbsp;
+            &nbsp; &#127802; &nbsp; &nbsp; Abu Dhabi</p>
+
+        <!--Get the date that the document was last modified and display-->
+        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+
+</html>

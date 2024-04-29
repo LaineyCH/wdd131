@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+
+header {
+    padding: 1rem;
+    background-color: rgb(56, 17, 111);
+}
+
+h1 {
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    background-color: rgb(56, 17, 111);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    z-index: 2;
+    width: 40%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+nav a:hover {
+    background-color: pink;
+    color: black;
+    font-weight: 700;
+}
+
+main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#temples {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    /* Centering the section */
+}
+
+.temple-figure {
+    display: inline-block;
+}
+
+.temple-img {
+    max-width: 80%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.temple-caption {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+footer {
+    background-color: rgb(56, 17, 111);
+    color: white;
+    padding: 1rem 1rem 6rem 1rem;
+    text-align: center;
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    font-size: larger;
+}
+
+.active::before {
+    content: "⛪";
+    padding-right: 1rem;
+}
+
+.active::after {
+    content: "⛪";
+    padding-left: 1rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 40px;
+}
+
+#menu.open::before {
+    content: "x";
+}
