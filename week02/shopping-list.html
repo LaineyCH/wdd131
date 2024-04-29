@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        /*
+        const uListElem = document.querySelector("ul");
+        const inputElem = document.querySelector("input");
+        const buttonElem = document.querySelector("button");
+        
+        //function handleClick() {
+        //    let inputValue = inputElem.valueAsNumber;
+        //    inputElem.value = "";
+        // Event listener - when is clicked, the handleClick function is called
+        //button.addEventListener("click", handleClick);    ------ improved below
+
+        button.addEventListener('click', () => {
+        const inputValue = inputElem.value;
+        input.value = '';
+
+            const listElem = document.createElement("li");
+            const spanElem = document.createElement("span");
+            const buttonElem2 = document.createElement("button");
+
+            listElem.appendChild(spanElem);
+            listElem.appendChild(buttonElem2);
+            spanElem.textContent = inputValue;
+            buttonElem2.textContent = "Delete";
+            uListElem.appendChild(listElem);
+
+            //delete button event handler that, when clicked, will delete the entire list item (<li>...</li>)
+            buttonElem.addEventListener('click', () => {
+                uListElem.removeChild(listElem);
+            });
+
+            //focus() method to focus the input element ready for entering the next shopping list item
+            inputElem.focus();
+        });
+
+        */
+
+        //Sample Code:
+      const list = document.querySelector('ul');
+      const input = document.querySelector('input');
+      const button = document.querySelector('button');
+
+      button.addEventListener('click', () => {
+        const myItem = input.value;
+        input.value = '';
+
+        const listItem = document.createElement('li');
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('button');
+
+        listItem.appendChild(listText);
+        listText.textContent = myItem;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = 'Delete';
+        list.appendChild(listItem);
+
+        listBtn.addEventListener('click', () => {
+          list.removeChild(listItem);
+        });
+
+        input.focus();
+      });
+
+    </script>
+
+  </body>
+</html>
