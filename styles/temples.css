@@ -12,10 +12,10 @@ body {
 
 header {
     padding: 1rem;
-    background-color: rgb(56, 17, 111);
+    background-color: #003AB8;
 }
 
-h1 {
+.header-heading {
     color: white;
     padding: 1rem;
     padding-left: 2rem;
@@ -31,7 +31,7 @@ nav ul {
 nav a {
     display: none;
     padding: 1rem;
-    background-color: rgb(56, 17, 111);
+    background-color: #003AB8;
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -49,9 +49,12 @@ main {
     margin-right: auto;
 }
 
-h2 {
+.page-heading {
     text-align: center;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:  #007C3E;
+    font-family: "Outfit", sans-serif;
 }
 
 #temples {
@@ -75,13 +78,7 @@ h2 {
 .temple-caption {
     text-align: center;
     padding-bottom: 2rem;
-}
-
-footer {
-    background-color: rgb(56, 17, 111);
-    color: white;
-    padding: 1rem 1rem 6rem 1rem;
-    text-align: center;
+    font-family: "Outfit", sans-serif;
 }
 
 .open a {
@@ -89,7 +86,7 @@ footer {
 }
 
 nav.open a:hover {
-    background-color: pink;
+    background-color: #AAD0FF;
     color: black;
     font-weight: 700;
 }
@@ -125,4 +122,11 @@ nav.open a:hover {
 
 #menu.open::before {
     content: "x";
+}
+
+footer {
+    background-color: #007C3E;
+    color: white;
+    padding: 1rem 1rem 6rem 1rem;
+    text-align: center;
 }
