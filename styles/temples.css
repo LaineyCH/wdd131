@@ -1,8 +1,7 @@
 :root {
     /* fonts */
     --font-heading: "Young Serif", serif;
-    --font-page: "Outfit", sans-serif;
-    --font-nav: "Poppins", sans-serif;
+    --font-page: "Poppins", sans-serif;
     /* colors */
     --top-color: #003AB8;
     --bottom-color: #007C3E;
@@ -43,7 +42,7 @@ nav a {
     padding: 1rem;
     background-color: var(--top-color);
     color: white;
-    font-family: var(--font-nav);
+    font-family: var(--font-page);
     font-weight: 500;
     text-decoration: none;
     text-align: center;
