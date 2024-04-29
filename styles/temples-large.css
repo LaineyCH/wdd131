@@ -1,0 +1,47 @@
+/* Formatting for large view ports above 768px wide */
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .header-heading {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-direction: row;
+        background-color: transparent;
+        max-height: 80px;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1.5rem;
+    }
+
+    .active::before {
+        padding-right: 0.5rem;
+        font-size: small;
+    }
+    
+    .active::after {
+        padding-left: 0.5rem;
+        font-size: small;
+    }
+}
+
+/* Formatting for large view ports above 768px wide */
+@media (min-width: 877px) {
+    .header-heading {
+        font-size: 2em;
+    }
+}
