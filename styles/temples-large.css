@@ -39,6 +39,11 @@
     }
 }
 
+#temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 /* Formatting for large view ports above 768px wide */
 @media (min-width: 877px) {
     .header-heading {

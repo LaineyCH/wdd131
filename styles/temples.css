@@ -1,3 +1,13 @@
+:root {
+    /* fonts */
+    --font-heading: "Young Serif", serif;
+    --font-page: "Outfit", sans-serif;
+    --font-nav: "Poppins", sans-serif;
+    /* colors */
+    --top-color: #003AB8;
+    --bottom-color: #007C3E;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -12,14 +22,14 @@ body {
 
 header {
     padding: 1rem;
-    background-color: #003AB8;
+    background-color: var(--top-color);
 }
 
 .header-heading {
     color: white;
     padding: 1rem;
     padding-left: 2rem;
-    font-family: "Young Serif", serif;
+    font-family: var(--font-heading);
     font-weight: 400;
 }
 
@@ -31,9 +41,9 @@ nav {
 nav a {
     display: none;
     padding: 1rem;
-    background-color: #003AB8;
+    background-color: var(--top-color);
     color: white;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-nav);
     font-weight: 500;
     text-decoration: none;
     text-align: center;
@@ -55,7 +65,7 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #007C3E;
-    font-family: "Outfit", sans-serif;
+    font-family: var(--font-page);
 }
 
 #temples {
@@ -79,7 +89,7 @@ main {
 .temple-caption {
     text-align: center;
     padding-bottom: 2rem;
-    font-family: "Outfit", sans-serif;
+    font-family: var(--font-page);
 }
 
 .open a {
@@ -126,7 +136,7 @@ a:hover {
 }
 
 footer {
-    background-color: #007C3E;
+    background-color: var(--bottom-color);
     color: white;
     padding: 1rem 1rem 6rem 1rem;
     text-align: center;
