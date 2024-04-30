@@ -64,7 +64,7 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #007C3E;
-    font-family: var(--font-page);
+    font-family: var(--font-heading);
 }
 
 #temples {
@@ -108,11 +108,11 @@ a:hover {
 .active::before {
     content: "⛪";
     padding-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .active::after {
     content: "⛪";
-    padding-left: 1rem;
 }
 
 #menu {
