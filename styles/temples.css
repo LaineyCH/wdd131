@@ -24,7 +24,7 @@ header {
     background-color: var(--top-color);
 }
 
-.header-heading {
+h1 {
     color: white;
     padding: 1rem;
     padding-left: 2rem;
@@ -59,7 +59,7 @@ main {
     max-width: 90%;
 }
 
-.page-heading {
+h2 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -91,6 +91,7 @@ main {
     font-family: var(--font-page);
 }
 
+/* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
 .open a {
     display: block;
 }
@@ -105,11 +106,11 @@ a:hover {
     font-size: larger;
 }
 
+/* adds icons to the active nav menu item */
 .active::before {
     content: "⛪";
     padding-right: 1rem;
 }
-
 .active::after {
     content: "⛪";
     padding-left: 1rem;
@@ -125,11 +126,13 @@ a:hover {
     right: 15px;
 }
 
+/* appearence for the button when open class os off */
 #menu::before {
     content: "☰";
     font-size: 40px;
 }
 
+/* appearence for the button when open class os on */
 #menu.open::before {
     content: "x";
 }
