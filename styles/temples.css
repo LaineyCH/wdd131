@@ -5,7 +5,7 @@
     /* colors */
     --top-color: #003AB8;
     --bottom-color: #007C3E;
-  }
+}
 
 * {
     margin: 0;
@@ -108,11 +108,11 @@ a:hover {
 .active::before {
     content: "⛪";
     padding-right: 1rem;
-    margin-bottom: 1rem;
 }
 
 .active::after {
     content: "⛪";
+    padding-left: 1rem;
 }
 
 #menu {
