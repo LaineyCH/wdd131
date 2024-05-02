@@ -7,11 +7,11 @@
 
     header {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
     }
 
     h1 {
-        font-size: 23px;
+        font-size: 2em;
     }
 
     nav {
@@ -41,12 +41,5 @@
     #temples {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-}
-
-/* Formatting for large view ports above 877px wide */
-@media (min-width: 877px) {
-    h1 {
-        font-size: 2em;
     }
 }
