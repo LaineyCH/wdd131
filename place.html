@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Week02 - Place">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Week02 - Country Page">
     <meta name="author" content="Elaine Henson">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
-    <title>Place</title>
+    <title>Country Page - Abu Dhabi</title>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almendra:wght@700&family=Noto+Naskh+Arabic:wght@700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Abu Dhabi</h1>
+        <div id="red-stripe"></div>
+        <div id="green-stripe"></div>
+        <h1 id="white-stripe">Abu Dhabi  |  أبو ظبي</h1>
+        <div id="black-stripe"></div>
     </header>
     <main>
-        <div class="hero">
+        <div class="main-img">
             <picture>
                 <source srcset="images/camel-large.webp" media="(min-width: 800px)">
                 <source srcset="images/camel-medium.webp" media="(min-width: 550px)">
                 <img src="images/camel-small.webp" alt="Abu Dhabi" width="90%">
             </picture>
         </div>
-
+        
         <div class="data">
+            <h2>Data</h2>
             <table id="data-table">
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="area">Area:</th>
+                    <td id="area" name="area">67,340 km&sup2;</td>
+                </tr>
+                <tr>
+                    <th for="population">Population:</th>
+                    <td id="population" name="population">2,908,173 (2016)</td>
+                </tr>
+                <tr>
+                    <th for="capital">Country:</th>
+                    <td id="capital" name="capital">United Arab Emirates</td>
                 </tr>
                 <tr>
                     <th for="capital">Capital:</th>
                     <td id="capital" name="capital">Abu Dhabi</td>
                 </tr>
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="languages">Languages:</th>
+                    <td id="languages" name="languages">Arabic, English</td>
                 </tr>
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="currency">Currency:</th>
+                    <td id="currency" name="currency">AED - Durham</td>
                 </tr>
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="currency">Time Zone:</th>
+                    <td id="currency" name="currency">UTC+4</td>
+                </tr>
+                <tr>
+                    <th for="currency">Calling Code:</th>
+                    <td id="currency" name="currency">+971</td>
+                </tr>
+                <tr>
+                    <th for="currency">Internet TLD:</th>
+                    <td id="currency" name="currency">.ae</td>
                 </tr>
             </table>
         </div>
-
+        
         <div class="weather">
+            <h2>Weather</h2>
+            <img id="sun-icon" src="images/sun-icon.svg" alt="Full Sun Weather Icon">
             <table id="weather-table">
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="capital">Temperature:</th>
+                    <td id="capital" name="capital">32&#176C</td>
                 </tr>
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="capital">Conditions:</th>
+                    <td id="capital" name="capital">Sunny</td>
                 </tr>
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="capital">Wind:</th>
+                    <td id="capital" name="capital">11km/h</td>
                 </tr>
                 <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
-                </tr>
-                <tr>
-                    <th for="capital">Capital:</th>
-                    <td id="capital" name="capital">Abu Dhabi</td>
+                    <th for="capital">Rel Humidity:</th>
+                    <td id="capital" name="capital">65%</td>
                 </tr>
             </table>
         </div>
@@ -75,11 +102,13 @@
 
     <footer>
         <!--Get current year and display with copyright information-->
-        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; <span id="camel" class="mirror">&#128042;</span> &nbsp; &nbsp; Elaine Henson
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; <span id="camel"
+                class="mirror">&#128042;</span> &nbsp; &nbsp; Elaine Henson
             &nbsp; &nbsp; &#128042; &nbsp; &nbsp; Abu Dhabi</p>
 
         <!--Get the date that the document was last modified and display-->
         <p>This webpage was last modified on <span id="lastmodified"></span></p>
     </footer>
 </body>
+
 </html>
