@@ -102,10 +102,6 @@ a:hover {
     font-weight: 700;
 }
 
-.active {
-    font-size: larger;
-}
-
 /* adds icons to the active nav menu item */
 .active::before {
     content: "⛪";
