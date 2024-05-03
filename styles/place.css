@@ -1,0 +1,44 @@
+
+
+ul {
+    list-style: none;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+
+textarea {
+    border: none;
+    text-decoration: none;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    height: 1.2em;
+}
+
+
+
+
+
+footer {
+    background-color: rgb(239, 208, 150);
+    color: black;
+    padding: 1rem 1rem 6rem 1rem;
+    text-align: center;
+
+}
+
+#camel {
+    display: Inline-block;
+}
+
+.mirror {
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+}

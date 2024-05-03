@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Week02 - Place">
+    <meta name="author" content="Elaine Henson">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Abu Dhabi</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/camel-large.webp" media="(min-width: 800px)">
+                <source srcset="images/camel-medium.webp" media="(min-width: 550px)">
+                <img src="images/camel-small.webp" alt="Abu Dhabi" width="90%">
+            </picture>
+        </div>
+
+        <div class="data">
+            <table id="data-table">
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="weather">
+            <table id="weather-table">
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+                <tr>
+                    <th for="capital">Capital:</th>
+                    <td id="capital" name="capital">Abu Dhabi</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <!--Get current year and display with copyright information-->
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; <span id="camel" class="mirror">&#128042;</span> &nbsp; &nbsp; Elaine Henson
+            &nbsp; &nbsp; &#128042; &nbsp; &nbsp; Abu Dhabi</p>
+
+        <!--Get the date that the document was last modified and display-->
+        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
