@@ -1,11 +1,14 @@
 let scriptureInput = document.querySelector("#favchap");
 let addButton = document.querySelector("button");
 let scriptureList = document.querySelector("#list");
+let message = document.querySelector("#message");
 
 addButton.addEventListener('click', addScripture);
 
 function addScripture() {
+
     if (scriptureInput.value.trim() !== '') {
+
         const listElement = document.createElement('li');
         listElement.textContent = scriptureInput.value;
 
@@ -32,3 +35,4 @@ scriptureInput.addEventListener('keydown', function(event) {
         addScripture();
     }
 });
+

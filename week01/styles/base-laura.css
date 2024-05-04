@@ -24,6 +24,8 @@ header {
     font-family: "permanent marker", sans-serif;
     font-weight: 500;
     font-size: large;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .nav-bar ul {
@@ -66,9 +68,9 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: white;
-    /* padding: 20px; */
+    padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     unicode-bidi: isolate;
     /* gap: 20px; */
 }
@@ -82,7 +84,7 @@ section {
     unicode-bidi: isolate;
 }
 
-#profile-text {
+div .profile-text {
     grid-column: 2 /3;
     text-align: left;
 }
@@ -100,11 +102,36 @@ h1 {
 }
 
 h2 {
+    display: block;
     /* text-decoration: underline; */
     text-align: center;
     font-size: 2rem;
     margin: 0;
 }
+
+nav li {
+    padding-top: 0.7rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+.card li {
+    padding: 1rem;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile img {
+    padding-top: 1rem;
+}
+
 /* Card Styles */
 .card {
     flex: 1 1;
@@ -114,10 +141,12 @@ h2 {
     /* background-color: #4bddbd; */
     /* padding: 20px; */
     /* margin-bottom: 20px; */
+    margin: 1rem;
 }
 
 #aside-section {
-    grid-column: 3 / 4;
+    display: grid;
+    /* grid-template-columns: 2 / 4; */
 }
 
 .card h2 {
