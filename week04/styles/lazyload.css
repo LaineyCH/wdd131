@@ -1,0 +1,58 @@
+header {
+    text-align: center;
+    background-color: rgb(98, 223, 232);
+    color: black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+}
+
+main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.black {
+    background-color: black;
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.fade-in-image { 
+    animation: fadeIn 5s; 
+}
+
+figcaption {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+footer {
+    background-color: rgb(98, 223, 232);
+    color: black;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.mirror {
+    display: Inline-block;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+}
