@@ -1,0 +1,54 @@
+:root {
+	--back: rgb(70, 0, 117);
+    --back2: rgb(105, 0, 175);
+    --foredark: rgb(53, 53, 53);
+	--forelight: hsla(0,0%,100%,1);
+	--border: rgb(70, 0, 117);
+    --borderlight: rgb(216, 201, 225);
+	--zebra: rgb(248, 238, 255);
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+	color: var(--foredark);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--border);
+}
+
+th {
+	background-color: var(--back);
+    color: var(--forelight);
+}
+
+.column-head {
+    background-color: var(--back2);
+}
+
+td {
+	text-align: center;
+    color: var(--foredark);
+    font-weight: 700;
+}
+
+tbody td {
+    border: 1px solid var(--borderlight);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
