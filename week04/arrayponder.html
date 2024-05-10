@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Array Activities</title>
+</head>
+
+<body>
+    <ul id="myList"></ul>
+    <ul id="gpaList"></ul>
+    <p id="total-gpa"></p>
+    <ul id="long-fruit"></ul>
+    <p id="lucky-number"></p>
+</body>
+
+<script>
+
+    const thisArray = ['one', 'two', 'three'];
+    const newArray = thisArray.map((number) => `<li>${number}</li>`);
+    document.getElementById("myList").innerHTML = newArray.join('');
+
+    const gradeArray = ['A', 'B', 'A'];
+
+    const gpaArray = gradeArray.map((grade) => {
+        let gpa = 0;
+        if (grade === "A") {
+            gpa = 4;
+        } else if (grade === "B") {
+            gpa = 3;
+        }
+        return `<li>${gpa}</li>`;
+    });
+
+    document.getElementById("gpaList").innerHTML = gpaArray.join('');
+
+    const gpaNumbers = gradeArray.map((grade) => {
+        let gpa = 0;
+        if (grade === "A") {
+            gpa = 4;
+        } else if (grade === "B") {
+            gpa = 3;
+        }
+        return gpa;
+    });
+
+    const totGpa = gpaNumbers.reduce((total, gpa) => total + gpa, 0);
+    document.getElementById("total-gpa").textContent = "Total GPA is: " + totGpa;
+
+    const fruitArray = ['watermelon', 'peach', 'apple', 'tomato', 'grape', 'blackberry', 'grape', 'orange'];
+
+    const longFruit = fruitArray.filter(name => name.length >= 6);
+    const newLongFruit = longFruit.map((name) => `<li>${name}</li>`);
+    document.getElementById("long-fruit").innerHTML = newLongFruit.join('');
+
+    const numbers = [12, 34, 21, 54];
+    const luckyNumber = 21;
+    const luckyIndex = numbers.indexOf(luckyNumber);
+    document.getElementById("lucky-number").textContent = "Lucky number is number " + (luckyIndex + 1) + " in the list. (Index: " + luckyIndex + ")";
+
+</script>
+
+</html>
