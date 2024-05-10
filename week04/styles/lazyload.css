@@ -26,6 +26,7 @@ main {
     margin-right: auto;
 }
 
+/*
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -38,6 +39,16 @@ main {
 
 .fade-img {
     animation: fadeIn 5s;
+}
+*/
+
+img {
+	opacity: 1;
+	transition: opacity 5s;
+}
+
+img[data-src] {
+	opacity: 0;
 }
 
 figcaption {
