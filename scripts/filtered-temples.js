@@ -51,6 +51,70 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/7-Rome-Temple-2160340.jpg"
     },
     {
+        templeName: "Durban South Africa Temple",
+        location: "Durban, South Africa",
+        dedicated: "2020, February, 16",
+        area: 19860,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg"
+    },
+    {
+        templeName: "Taipei Taiwan Temple",
+        location: "Taipei, Taipei, Taiwan",
+        dedicated: "1984, November, 17",
+        area: 9945,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-1031625-wallpaper.jpg"
+    },
+    {
+        templeName: "Colonia Juárez Chihuahua Mexico Temple",
+        location: "Colonia Juárez, Chihuahua, Mexico",
+        dedicated: "1999, March, 6",
+        area: 6800,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-chihuahua-mexico/400x250/colonia-juarez-mexico-temple-lds-1039762-wallpaper.jpg"
+    },
+    {
+        templeName: "Logan Utah Temple",
+        location: "Logan, Utah, United States",
+        dedicated: "1884, May, 17",
+        area: 119619,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-utah-temple-1121499-wallpaper.jpg"
+    },
+    {
+        templeName: "Perth Australia Temple",
+        location: "Yokine, Western Australia, Australia",
+        dedicated: "2001, May, 20",
+        area: 10700,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/perth-australia/400x250/perth-australia-temple-lds-957466-wallpaper.jpg"
+    },
+    {
+        templeName: "Sapporo Japan Temple",
+        location: "Atsubetsu-ku Sapporo, Hokkaido, Japan",
+        dedicated: "2016, August, 21",
+        area: 48480,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg"
+    },
+    {
+        templeName: "Accra Ghana Temple",
+        location: "Accra, Greater Accra, Ghana",
+        dedicated: "2004, January, 11",
+        area: 17500,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-758797-wallpaper.jpg"
+    },
+    {
+        templeName: "Paris France Temple",
+        location: "Le Chesnay, France",
+        dedicated: "2017, May, 21",
+        area: 44175,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/400x250/Paris-Temple02.jpg"
+    },
+    {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
         dedicated: "2005, August, 7",
@@ -115,76 +179,12 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-utah-temple-clouds-922212-wallpaper.jpg"
     },
     {
-        templeName: "Durban South Africa Temple",
-        location: "Durban, South Africa",
-        dedicated: "2020, February, 16",
-        area: 19860,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg"
-    },
-    {
-        templeName: "Taipei Taiwan Temple",
-        location: "Taipei, Taipei, Taiwan",
-        dedicated: "1984, November, 17",
-        area: 9945,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-1031625-wallpaper.jpg"
-    },
-    {
-        templeName: "Colonia Juárez Chihuahua Mexico Temple",
-        location: "Colonia Juárez, Chihuahua, Mexico",
-        dedicated: "1999, March, 6",
-        area: 6800,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-chihuahua-mexico/400x250/colonia-juarez-mexico-temple-lds-1039762-wallpaper.jpg"
-    },
-    {
-        templeName: "Logan Utah Temple",
-        location: "Logan, Utah, United States",
-        dedicated: "1884, May, 17",
-        area: 119619,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-utah-temple-1121499-wallpaper.jpg"
-    },
-    {
         templeName: "Salt Lake Temple",
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
         area: 382207,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
-    },
-    {
-        templeName: "Perth Australia Temple",
-        location: "Yokine, Western Australia, Australia",
-        dedicated: "2001, May, 20",
-        area: 10700,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/perth-australia/400x250/perth-australia-temple-lds-957466-wallpaper.jpg"
-    },
-    {
-        templeName: "Sapporo Japan Temple",
-        location: "Atsubetsu-ku Sapporo, Hokkaido, Japan",
-        dedicated: "2016, August, 21",
-        area: 48480,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg"
-    },
-    {
-        templeName: "Accra Ghana Temple",
-        location: "Accra, Greater Accra, Ghana",
-        dedicated: "2004, January, 11",
-        area: 17500,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-758797-wallpaper.jpg"
-    },
-    {
-        templeName: "Paris France Temple",
-        location: "Le Chesnay, France",
-        dedicated: "2017, May, 21",
-        area: 44175,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/400x250/Paris-Temple02.jpg"
     },
 ];
 

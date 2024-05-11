@@ -4,9 +4,9 @@
     --font-page: "Poppins", sans-serif;
     /* colors */
     --top-color: #003AB8;
-    --bottom-color: #076d3a;
-    --background-light: #dfe9ff;
+    --top-color-light: #dfe9ff;
     --text-light: white;
+    --bottom-color: #076d3a;
     --bottom-color-light: #d5f0e3;
     --bottom-color-medium: #89ae9c;
 }
@@ -79,7 +79,7 @@ h2 {
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
-    box-shadow: 2px 2px 35px var(--bottom-color-medium);
+    box-shadow: 2px 2px 20px var(--bottom-color);
 }
 
 .temple-img {
@@ -117,7 +117,8 @@ h2 {
 h3 {
     text-align: center;
     font-family: var(--font-heading);
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: var(--top-color);
 }
 
 /* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
@@ -126,7 +127,7 @@ h3 {
 }
 
 a:hover {
-    background-color: var(--bottom-color-light);
+    background-color: var(--top-color-light);
     color: black;
     font-weight: 700;
     border-radius: 10px;
