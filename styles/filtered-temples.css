@@ -8,6 +8,7 @@
     --background-light: #dfe9ff;
     --text-light: white;
     --bottom-color-light: #d5f0e3;
+    --bottom-color-medium: #89ae9c;
 }
 
 * {
@@ -75,17 +76,17 @@ h2 {
 .temple-card {
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: var(--background-light);
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
+    box-shadow: 2px 2px 35px var(--bottom-color-medium);
 }
 
 .temple-img {
     width: 100%;
     aspect-ratio: auto 400 / 250;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px var(--top-color);
+    box-shadow: 2px 2px 15px var(--top-color);
 }
 
 .temple-card table {

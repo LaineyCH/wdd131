@@ -154,6 +154,38 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
     },
+    {
+        templeName: "Perth Australia Temple",
+        location: "Yokine, Western Australia, Australia",
+        dedicated: "2001, May, 20",
+        area: 10700,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/perth-australia/400x250/perth-australia-temple-lds-957466-wallpaper.jpg"
+    },
+    {
+        templeName: "Sapporo Japan Temple",
+        location: "Atsubetsu-ku Sapporo, Hokkaido, Japan",
+        dedicated: "2016, August, 21",
+        area: 48480,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg"
+    },
+    {
+        templeName: "Accra Ghana Temple",
+        location: "Accra, Greater Accra, Ghana",
+        dedicated: "2004, January, 11",
+        area: 17500,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-758797-wallpaper.jpg"
+    },
+    {
+        templeName: "Paris France Temple",
+        location: "Le Chesnay, France",
+        dedicated: "2017, May, 21",
+        area: 44175,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/400x250/Paris-Temple02.jpg"
+    },
 ];
 
 let filteredTemples = [];
