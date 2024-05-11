@@ -253,7 +253,7 @@ function generate_temple_cards(filterPhrase) {
                         </tr>
                     </table>
                 </div>
-                <img class="temple-img" src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400">
+                <img class="temple-img" src="${temple.imageUrl}" alt="${temple.templeName}" width="400">
             </div>`
             } else {
                 return `<div class="temple-card">
