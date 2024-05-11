@@ -193,7 +193,7 @@ function changeActive(activePhrase) {
 // reorder date format
 function reorderDate(dateString) {
     const parts = dateString.split(',').map(part => part.trim()); // ['1965', 'April', '4']
-    
+
     const day = parts[2];
     const month = parts[1];
     const year = parts[0];
@@ -233,8 +233,30 @@ function generate_temple_cards(filterPhrase) {
     changeActive(filterPhrase);
 
     const htmlTemples = filteredTemples.map(
-        (temple) =>
-            `<div class="temple-card">
+        (temple, index) => {
+            if (index < 3) {
+                return `<div class="temple-card">
+                <div class="temple-info">
+                    <h3>${temple.templeName}</h3>
+                    <table>
+                        <tr>
+                            <th class="label">Location:</th>
+                            <td class="value">${temple.location}</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Dedicated:</th>
+                            <td class="value">${reorderDate(temple.dedicated)}</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Size:</th>
+                            <td class="value">${temple.area} sq ft</td>
+                        </tr>
+                    </table>
+                </div>
+                <img class="temple-img" src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400">
+            </div>`
+            } else {
+                return `<div class="temple-card">
                 <div class="temple-info">
                     <h3>${temple.templeName}</h3>
                     <table>
@@ -254,7 +276,8 @@ function generate_temple_cards(filterPhrase) {
                 </div>
                 <img class="temple-img" data-src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400">
             </div>`
-    );
+            }
+        });
     document.getElementById("temples").innerHTML = htmlTemples.join('');
 
     // remove the data-src attribute when the image has loaded
