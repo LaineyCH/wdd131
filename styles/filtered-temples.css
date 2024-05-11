@@ -4,7 +4,10 @@
     --font-page: "Poppins", sans-serif;
     /* colors */
     --top-color: #003AB8;
-    --bottom-color: #007C3E;
+    --bottom-color: #076d3a;
+    --background-light: #dfe9ff;
+    --text-light: white;
+    --bottom-color-light: #d5f0e3;
 }
 
 * {
@@ -14,7 +17,6 @@
 }
 
 body {
-    background-color: white;
     display: grid;
     grid-template-rows: 100px auto auto;
 }
@@ -25,7 +27,7 @@ header {
 }
 
 h1 {
-    color: white;
+    color: var(--text-light);
     padding: 1rem;
     padding-left: 2rem;
     font-family: var(--font-heading);
@@ -41,7 +43,7 @@ nav a {
     display: none;
     padding: 1rem;
     background-color: var(--top-color);
-    color: white;
+    color: var(--text-light);
     font-family: var(--font-page);
     font-weight: 500;
     text-decoration: none;
@@ -52,19 +54,15 @@ nav a {
     margin-left: auto;
 }
 
-main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-}
-
 h2 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: #007C3E;
     font-family: var(--font-heading);
+    font-size: 1.8em;
+    color: var(--bottom-color);
+    border-top: 5px solid var(--bottom-color);
+    border-bottom: 5px solid var(--bottom-color);
 }
 
 #temples {
@@ -74,21 +72,51 @@ h2 {
     /* Centers the section */
 }
 
-.temple-figure {
+.temple-card {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    background-color: var(--background-light);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
 }
 
 .temple-img {
-    max-width: 90%;
-    display: block;
-    margin: 1rem auto;
+    width: 100%;
+    aspect-ratio: auto 400 / 250;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px var(--top-color);
 }
 
-.temple-caption {
-    text-align: center;
-    padding-bottom: 2rem;
+.temple-card table {
+    padding: 1rem;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label,
+.value {
     font-family: var(--font-page);
+    font-size: 1em;
+}
+
+.label {
+    text-align: right;
+    padding-right: 0.5rem;
+    font-weight: 600;
+}
+
+.value {
+    text-align: left;
+    padding-left: 0.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.2em;
 }
 
 /* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
@@ -97,8 +125,13 @@ h2 {
 }
 
 a:hover {
-    background-color: #AAD0FF;
+    background-color: var(--bottom-color-light);
     color: black;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.active {
     font-weight: 700;
 }
 
@@ -107,10 +140,12 @@ a:hover {
     content: "⛪";
     padding-right: 1rem;
 }
+
+/*
 .active::after {
     content: "⛪";
     padding-left: 1rem;
-}
+} */
 
 #menu {
     font-size: 1.5rem;
@@ -138,4 +173,51 @@ footer {
     color: white;
     padding: 1rem 1rem 6rem 1rem;
     text-align: center;
+}
+
+/* Formatting for large view ports above 768px wide */
+@media (min-width: 768px) {
+
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-direction: row;
+        background-color: transparent;
+        max-height: 80px;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1.5rem;
+    }
+
+    .active::before {
+        padding-right: 0.5rem;
+        font-size: small;
+    }
+
+    .active::after {
+        padding-left: 0.5rem;
+        font-size: small;
+    }
 }

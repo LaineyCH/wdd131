@@ -24,6 +24,8 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+// temples object array
 const temples = [
     {
         templeName: "London England Temple",
@@ -70,7 +72,7 @@ const temples = [
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-daylight-1416668-wallpaper.jpg"
     },
     {
         templeName: "Yigo Guam",
@@ -112,14 +114,52 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-utah-temple-clouds-922212-wallpaper.jpg"
     },
+    {
+        templeName: "Durban South Africa Temple",
+        location: "Durban, South Africa",
+        dedicated: "2020, February, 16",
+        area: 19860,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/400x250/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg"
+    },
+    {
+        templeName: "Taipei Taiwan Temple",
+        location: "Taipei, Taipei, Taiwan",
+        dedicated: "1984, November, 17",
+        area: 9945,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/taipei-taiwan/400x250/taipei-taiwan-temple-lds-1031625-wallpaper.jpg"
+    },
+    {
+        templeName: "Colonia Juárez Chihuahua Mexico Temple",
+        location: "Colonia Juárez, Chihuahua, Mexico",
+        dedicated: "1999, March, 6",
+        area: 6800,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-chihuahua-mexico/400x250/colonia-juarez-mexico-temple-lds-1039762-wallpaper.jpg"
+    },
+    {
+        templeName: "Logan Utah Temple",
+        location: "Logan, Utah, United States",
+        dedicated: "1884, May, 17",
+        area: 119619,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-utah-temple-1121499-wallpaper.jpg"
+    },
+    {
+        templeName: "Salt Lake Temple",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, April, 6",
+        area: 382207,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
+    },
 ];
 
-let filteredTemples = temples;
+let filteredTemples = [];
 
 document.addEventListener('DOMContentLoaded', function () {
     generate_temple_cards("home");
-    homeButton.classList.toggle('active');
-    pageHeading.textContent = "Temples | Home";
 }, false);
 
 function changeActive(activePhrase) {
@@ -183,25 +223,26 @@ function generate_temple_cards(filterPhrase) {
 
     const htmlTemples = filteredTemples.map(
         (temple) =>
-            `<div id="templeCard">
-            <h3>${temple.templeName}</h3>
-            <table>
-                <tr>
-                    <th>Location:</th>
-                    <td>${temple.location}</td>
-                </tr>
-                <tr>
-                    <th>Dedicated:</th>
-                    <td>${temple.dedicated}</td>
-                </tr>
-                <tr>
-                    <th>Size:</th>
-                    <td>${temple.area} sq ft</td>
-                </tr>
-            </table>
-            <img data-src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" height="200"
-            width="320">
-        </div>`
+            `<div class="temple-card">
+                <div class="temple-info">
+                    <h3>${temple.templeName}</h3>
+                    <table>
+                        <tr>
+                            <th class="label">Location:</th>
+                            <td class="value">${temple.location}</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Dedicated:</th>
+                            <td class="value">${temple.dedicated}</td>
+                        </tr>
+                        <tr>
+                            <th class="label">Size:</th>
+                            <td class="value">${temple.area} sq ft</td>
+                        </tr>
+                    </table>
+                </div>
+                <img class="temple-img" data-src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400">
+            </div>`
     );
     document.getElementById("temples").innerHTML = htmlTemples.join('');
 
