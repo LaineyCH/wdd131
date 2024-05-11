@@ -234,7 +234,7 @@ function generate_temple_cards(filterPhrase) {
 
     const htmlTemples = filteredTemples.map(
         (temple, index) => {
-            if (index < 3) {
+            if (index < 2) {
                 return `<div class="temple-card">
                 <div class="temple-info">
                     <h3>${temple.templeName}</h3>
