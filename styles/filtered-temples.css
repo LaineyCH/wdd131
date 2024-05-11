@@ -1,0 +1,141 @@
+:root {
+    /* fonts */
+    --font-heading: "Young Serif", serif;
+    --font-page: "Poppins", sans-serif;
+    /* colors */
+    --top-color: #003AB8;
+    --bottom-color: #007C3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--top-color);
+}
+
+h1 {
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    background-color: var(--top-color);
+    color: white;
+    font-family: var(--font-page);
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    z-index: 2;
+    width: 45%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #007C3E;
+    font-family: var(--font-heading);
+}
+
+#temples {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* Centers the section */
+}
+
+.temple-figure {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.temple-img {
+    max-width: 90%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.temple-caption {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: var(--font-page);
+}
+
+/* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
+.open a {
+    display: block;
+}
+
+a:hover {
+    background-color: #AAD0FF;
+    color: black;
+    font-weight: 700;
+}
+
+/* adds icons to the active nav menu item */
+.active::before {
+    content: "⛪";
+    padding-right: 1rem;
+}
+.active::after {
+    content: "⛪";
+    padding-left: 1rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+/* appearence for the button when open class os off */
+#menu::before {
+    content: "☰";
+    font-size: 40px;
+}
+
+/* appearence for the button when open class os on */
+#menu.open::before {
+    content: "x";
+}
+
+footer {
+    background-color: var(--bottom-color);
+    color: white;
+    padding: 1rem 1rem 6rem 1rem;
+    text-align: center;
+}

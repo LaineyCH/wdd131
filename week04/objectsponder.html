@@ -29,6 +29,7 @@
         </thead>
         <tbody id="sections"></tbody>
     </table>
+    <p id="test"></p>
 </body>
 
 <style>
@@ -114,6 +115,11 @@
         const sectionNum = document.querySelector("#sectionNumber").value;
         aCourse.changeEnrollment(sectionNum, false);
     });
+
+    let esomeprazole = {'id':'mnb78932','amount':23145,'amountType':'ct','expDate':'10/01/2021'}
+    const dose = esomeprazole[0].amount[1];
+    document.querySelector("#test").textContent = dose;
+
 </script>
 
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Week02 - Temple Album">
+    <meta name="author" content="Elaine Henson">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <title>Temple Album</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <!--button for hamburger menu, to be visible only on mobile view-->
+        <button id="menu" aria-label="menu"></button>
+        <!--navigation-->
+        <nav>
+            <a id="home-button" href='#'>Home</a>
+            <a id="old-button" href='#'>Old</a>
+            <a id="new-button" href='#'>New</a>
+            <a id="large-button" href='#'>Large</a>
+            <a id="small-button" href='#'>Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="page-heading"></h2>
+        <!--section for temple pictures, from JS temple object array-->
+        <section id="temples">
+        </section>
+    </main>
+
+    <footer>
+        <!--Get current year and display with copyright information-->
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; ⛪ &nbsp; &nbsp; Elaine Henson
+            &nbsp; &nbsp; ⛪ &nbsp; &nbsp; Abu Dhabi</p>
+
+        <!--Get the date that the document was last modified and display-->
+        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+
+</html>

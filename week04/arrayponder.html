@@ -10,6 +10,7 @@
     <p id="total-gpa"></p>
     <ul id="long-fruit"></ul>
     <p id="lucky-number"></p>
+    <p id="status"></p>
 </body>
 
 <script>
@@ -55,6 +56,21 @@
     const luckyNumber = 21;
     const luckyIndex = numbers.indexOf(luckyNumber);
     document.getElementById("lucky-number").textContent = "Lucky number is number " + (luckyIndex + 1) + " in the list. (Index: " + luckyIndex + ")";
+
+    const points = [100, 88, 94, 78, 84, 69];
+
+    function convertPointsToStatus(pointTotal) {
+        let status = 'Not Complete';
+        if (pointTotal >= 93) {
+            status = "Excellent";
+        } else if (pointTotal >= 70) {
+            status = "Complete";
+        }
+        return status;
+    }
+
+    const statusReport = points.map(convertPointsToStatus);
+    document.getElementById("status").textContent = statusReport;
 
 </script>
 
