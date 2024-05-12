@@ -1,20 +1,16 @@
-
 //get the current year
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 //get the date the document was last modified
 document.getElementById("lastmodified").innerHTML = new Date(document.lastModified);
-
 //select HTML elements and assign to constants
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
-
 // select menu buttons
 const homeButton = document.querySelector('#home-button');
 const oldButton = document.querySelector('#old-button');
 const newButton = document.querySelector('#new-button');
 const largeButton = document.querySelector('#large-button');
 const smallButton = document.querySelector('#small-button');
-
 // select page heading
 const pageHeading = document.querySelector('#page-heading');
 
@@ -221,7 +217,6 @@ function changeActive(activePhrase) {
         default:
     }
 }
-
 // reorder date format
 function reorderDate(dateString) {
     const parts = dateString.split(',').map(part => part.trim()); // ['1965', 'April', '4']
@@ -232,7 +227,6 @@ function reorderDate(dateString) {
 
     return `${day} ${month} ${year}`;
 }
-
 function generate_temple_cards(filterPhrase) {
     /* Filter temple array: Home - displays all | Old - temples built before 1900 | New - temples built after 2000 | 
     Large - temples larger than 90000 square feet | Small - temples smaller than 10000 square feet */
@@ -261,12 +255,10 @@ function generate_temple_cards(filterPhrase) {
             filteredTemples = temples;
             pageHeading.textContent = "Temples | Home";
     };
-
     changeActive(filterPhrase);
-
     const htmlTemples = filteredTemples.map(
         (temple, index) => {
-            if (index < 2) {
+            if (index < 1) {
                 return `<div class="temple-card">
                 <div class="temple-info">
                     <h3>${temple.templeName}</h3>
@@ -311,7 +303,6 @@ function generate_temple_cards(filterPhrase) {
             }
         });
     document.getElementById("temples").innerHTML = htmlTemples.join('');
-
     // remove the data-src attribute when the image has loaded
     [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));
@@ -322,23 +313,18 @@ function generate_temple_cards(filterPhrase) {
 }
 
 // create event listeners for menu selections
-
 homeButton.addEventListener('click', () => {
     generate_temple_cards("home");
 });
-
 oldButton.addEventListener('click', () => {
     generate_temple_cards("old");
 });
-
 newButton.addEventListener('click', () => {
     generate_temple_cards("new");
 });
-
 largeButton.addEventListener('click', () => {
     generate_temple_cards("large");
 });
-
 smallButton.addEventListener('click', () => {
     generate_temple_cards("small");
 });
