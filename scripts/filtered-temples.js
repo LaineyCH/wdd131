@@ -217,6 +217,7 @@ function changeActive(activePhrase) {
         default:
     }
 }
+
 // reorder date format
 function reorderDate(dateString) {
     const parts = dateString.split(',').map(part => part.trim()); // ['1965', 'April', '4']
@@ -227,6 +228,7 @@ function reorderDate(dateString) {
 
     return `${day} ${month} ${year}`;
 }
+
 function generate_temple_cards(filterPhrase) {
     /* Filter temple array: Home - displays all | Old - temples built before 1900 | New - temples built after 2000 | 
     Large - temples larger than 90000 square feet | Small - temples smaller than 10000 square feet */
