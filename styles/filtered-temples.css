@@ -1,7 +1,10 @@
 :root {
     /* fonts */
-    --font-heading: "Young Serif", serif;
-    --font-page: "Poppins", sans-serif;
+    --font-heading: Georgia, 'Times New Roman', Times, serif;
+    /* "Young Serif", serif; */
+    --font-page: Verdana, Geneva, Tahoma, sans-serif;
+    /* "Poppins", sans-serif; */
+
     /* colors */
     --top-color: #003AB8;
     --top-color-light: #dfe9ff;
