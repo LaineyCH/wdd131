@@ -259,30 +259,8 @@ function generate_temple_cards(filterPhrase) {
     };
     changeActive(filterPhrase);
     const htmlTemples = filteredTemples.map(
-        (temple, index) => {
-            if (index < 1) {
-                return `<div class="temple-card">
-                <div class="temple-info">
-                    <h3>${temple.templeName}</h3>
-                    <table>
-                        <tr>
-                            <th class="label">Location:</th>
-                            <td class="value">${temple.location}</td>
-                        </tr>
-                        <tr>
-                            <th class="label">Dedicated:</th>
-                            <td class="value">${reorderDate(temple.dedicated)}</td>
-                        </tr>
-                        <tr>
-                            <th class="label">Size:</th>
-                            <td class="value">${temple.area} sq ft</td>
-                        </tr>
-                    </table>
-                </div>
-                <img class="temple-img" src="${temple.imageUrl}" alt="${temple.templeName}" width="400">
-            </div>`
-            } else {
-                return `<div class="temple-card">
+        (temple) =>
+            `<div class="temple-card">
                 <div class="temple-info">
                     <h3>${temple.templeName}</h3>
                     <table>
@@ -302,8 +280,7 @@ function generate_temple_cards(filterPhrase) {
                 </div>
                 <img class="temple-img" data-src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400">
             </div>`
-            }
-        });
+    );
     document.getElementById("temples").innerHTML = htmlTemples.join('');
     // remove the data-src attribute when the image has loaded
     [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
