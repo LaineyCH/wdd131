@@ -83,7 +83,7 @@ p {
 #color-schema {
     list-style-type: none;
     width: 80%;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 0 auto;
     padding: 1rem 1rem 1rem 0rem;
     text-align: center;
 }
@@ -133,7 +133,10 @@ p {
     color: black;
 }
 
-#typography h1,
+#typography {
+    list-style-type: none;
+}
+
 #typography h2,
 #typography h3,
 #typography p {
