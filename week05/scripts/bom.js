@@ -18,8 +18,8 @@ scriptureInput.addEventListener('keydown', function (event) {
 
 function addScripture() {
     if (scriptureInput.value.trim() !== '') {
-        displayList(scriptureInput.value);
         chaptersArray.push(scriptureInput.value);
+        displayList(scriptureInput.value);
         setChapterList();
         scriptureInput.value = '';
         scriptureInput.focus();
