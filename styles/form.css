@@ -1,0 +1,210 @@
+:root {
+    /* fonts */
+    --font-heading: "Tilt Neon", sans-serif;
+    --font-page: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* colors */
+    --head-color: #000000;
+    --text-light: white;
+    --body-color: #ffffff;
+    --dark-neon-color: rgb(179, 20, 115);
+    --light-neon-color: rgb(255, 0, 153);
+    --light-neon2-color: rgb(0, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    max-width: 380px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 .2rem white,
+        0 0 .2rem white,
+        0 0 2rem var(--light-neon-color),
+        0 0 0.8rem white,
+        0 0 2.8rem var(--light-neon2-color),
+        inset 0 0 1.3rem var(--light-neon-color);
+    border-radius: 2rem;
+    border: 4px solid white;
+}
+
+.pform {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header,
+footer {
+    background-color: var(--head-color);
+    padding: 1rem;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem white,
+    0 0 .2rem white,
+    0 0 2rem var(--light-neon-color),
+    0 0 0.8rem white,
+    0 0 2.8rem var(--light-neon2-color),
+        inset 0 0 1.3rem var(--light-neon-color);
+}
+
+footer {
+    color: white;
+    font-family: var(--font-page);
+    padding: 1rem;
+}
+
+.neon-text {
+    font-family: var(--font-heading);
+    color: white;
+    text-shadow:
+        0 0 10px white,
+        0 0 21px var(--light-neon-color),
+        0 0 42px var(--light-neon-color),
+        0 0 82px var(--light-neon-color),
+        0 0 92px var(--light-neon-color),
+        0 0 102px var(--light-neon-color),
+        0 0 151px var(--light-neon-color);
+    padding: 1rem 2rem;
+    font-size: 2.5em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: .5rem 1rem;
+    border: none;
+}
+
+.input-title {
+    display: block;
+    padding-top: 1rem;
+    color: var(--dark-neon-color);
+    font-family: var(--font-heading);
+    font-size: 1.2em;
+}
+
+.check-all {
+    padding-top: 0;
+    padding-bottom: 0.2em;
+}
+
+.prform input[type="text"],
+.prform input[type="date"],
+.prform select {
+    background-color: #efefef;
+    display: block;
+    border: solid 1px var(--dark-neon-color);
+    border-radius: 6px;
+    padding: .75rem;
+    color: #4e4e4e;
+    font-family: var(--font-heading);
+    font-size: 1em;
+    width: 100%;
+    max-width: 380px;
+    appearance: none;
+    /* to stop the browser from applying its own styles - need to add arrow to "please select" on selection input */
+}
+
+.prform input[type="checkbox"] {
+    margin-right: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.check-label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+.prform input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--light-neon-color), var(--dark-neon-color));
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.prform input:required {
+    border-left: solid 8px red;
+}
+
+.prform input:required:valid {
+    border-left: solid 8px green;
+}
+
+.star-rating {
+    display: flex;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .star-rating input {
+    display: none;
+  }
+
+  .star-rating label {
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+
+  }
+
+  .star-rating label:hover {
+    color: var(--dark-neon-color);
+  }
+  
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  .star-rating label::before {
+    content: '\2606';
+    top: 0px;
+    line-height: 26px;
+  }
+
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  }  
+  
+
+/* Formatting for large view ports above 768px wide */
+@media (min-width: 768px) {
+
+    body {
+        max-width: 80%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+}
