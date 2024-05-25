@@ -28,19 +28,22 @@ const products = [
 ];
 
 /* Create an array of the product names and capitalise each word */
-const productNames = products.map((product) => {
-    const words = product.name.split(" ");
+function CapitaliseName(name) {
+    const words = name.split(" ");
     for (let i = 0; i < words.length; i++) {
         words[i] = words[i][0].toUpperCase() + words[i].substr(1);
     }
     return words.join(" ");
-});
+};
 
 /* create HTML for the select options and send to the product-select element */
-function mapProducts(namesArray) {
-    const productsHtml = namesArray.forEach((product) => {
-        document.getElementById("product-select").innerHTML += `<option value="${product}" aria-label="${product}">${product}</option>`
+function mapProducts() {
+    const productsHtml = products.forEach((product) => {
+        let name = CapitaliseName(product.name);
+        let id = product.id;
+        document.getElementById("product-select").innerHTML +=
+            `<option value="${id}" aria-label="${name}">${name}</option>`
     })
 };
 
-mapProducts(productNames);
+mapProducts();
