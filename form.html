@@ -17,10 +17,10 @@
     <!--Styles & Scripts-->
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <!-- HEADER HERE -->
     <header>
         <h1 class="neon-text">Product Review</h1>
     </header>
@@ -29,7 +29,7 @@
         <form method="get" action="review.html" class="prform">
             <fieldset>
                 <label class="input-title">Product Name
-                    <select id="product-select" name="product-name" aria-label="product name">
+                    <select id="product-select" name="product-name" aria-label="product name" required>
                         <option value="" aria-label="select product" selected disabled>Select a Product... &#9662;
                         </option>
                         <!--JS Code Inserts Here-->
@@ -38,26 +38,12 @@
 
                 <div class="input-title">Overall Rating</div>
                 <div class="star-rating">
-                    <label> <input type="radio" name="stars" id="5-star" value="5"></label>
-                    <label><input type="radio" name="stars" id="4-star" value="4"></label>
-                    <label><input type="radio" name="stars" id="3-star" value="3"></label>
-                    <label><input type="radio" name="stars" id="2-star" value="2"></label>
-                    <label><input type="radio" name="stars" id="1-star" value="1"></label>
+                    <input type="radio" name="stars" id="5-star" value="5" required><label for="5-star"></label>
+                    <input type="radio" name="stars" id="4-star" value="4" required><label for="4-star"></label>
+                    <input type="radio" name="stars" id="3-star" value="3" required><label for="3-star"></label>
+                    <input type="radio" name="stars" id="2-star" value="2" required><label for="2-star"></label>
+                    <input type="radio" name="stars" id="1-star" value="1" required><label for="1-star"></label>
                 </div>
-
-                <!--
-                <label>⭐<input type="radio" name="rating" value="one-star" id="one-star" aria-label="one star rating"
-                        required></label>
-                <label>⭐⭐<input type="radio" name="rating" value="two-star" id="two-star"
-                        aria-label="two star rating"></label>
-                <label>⭐⭐⭐<input type="radio" name="rating" value="three-star" id="two-star"
-                        aria-label="three star rating"></label>
-                <label>⭐⭐⭐⭐<input type="radio" name="rating" value="four-star" id="two-star"
-                        aria-label="four star rating"></label>
-                <label>⭐⭐⭐⭐⭐<input type="radio" name="rating" value="five-star" id="two-star"
-                        aria-label="five star rating"></label>
-                -->
-
 
                 <label class="input-title">Date of Installation <input type="date" id="date-input" name="install-date"
                         aria-label="installation date" required></label>
@@ -74,7 +60,7 @@
                         value="yes">
                     Design</label>
 
-                <label class="input-title">Written Review
+                <label class="input-title">Written Review <br>
                     <textarea aria-label="review box" id="review-text" name="written-review"></textarea></label>
 
                 <label class="input-title">Your Name (<i>optional</i>)
@@ -89,7 +75,7 @@
     <footer>
         <!--Get current year and display with copyright information-->
         <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; ⚡ &nbsp; &nbsp; Elaine Henson
-            &nbsp; &nbsp; 🏫 &nbsp; &nbsp; Abu Dhabi</p>
+            &nbsp; &nbsp; ⚡ &nbsp; &nbsp; Abu Dhabi</p>
 
         <!--Get the date that the document was last modified and display-->
         <p>This webpage was last modified on <span id="lastmodified"></span></p>

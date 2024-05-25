@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Week05 - Review Submitted">
+    <meta name="author" content="Elaine Henson">
+    <title>Review Submitted Page</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!--Styles & Scripts-->
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body id="review-submitted">
+    <header>
+        <h1 class="neon-text">Review Submitted</h1>
+    </header>
+
+    <main>
+        <div class="prsubmitted">
+            <p>Thank you. Your review has been submitted.</p>
+            <p>Number of reviews you have completed: <span id="review-count"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <!--Get current year and display with copyright information-->
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; ⚡ &nbsp; &nbsp; Elaine Henson
+            &nbsp; &nbsp; ⚡ &nbsp; &nbsp; Abu Dhabi</p>
+
+        <!--Get the date that the document was last modified and display-->
+        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+    </footer>
+</body>
+
+</html>
