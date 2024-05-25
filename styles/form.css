@@ -133,6 +133,7 @@ textarea {
 .check-label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
+    padding-bottom: 0.6rem;
 }
 
 /* Submit Button */
@@ -150,11 +151,13 @@ textarea {
 }
 
 /* Hint for required Fields*/
-.prform input:required {
+.prform input:required,
+.prform select:required {
     border-left: solid 8px red;
 }
 
-.prform input:required:valid {
+.prform input:required:valid,
+.prform select:required:valid {
     border-left: solid 8px green;
 }
 
