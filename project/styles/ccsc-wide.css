@@ -48,6 +48,7 @@
     .aside-a {
         display: block;
         width: 100%;
+        border: 2px solid var(--pink-dark);
     }
 
     #wide-nav-menu {

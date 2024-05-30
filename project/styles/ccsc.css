@@ -154,3 +154,7 @@ a:hover {
 .active {
     font-weight: 700;
 }
+
+a.socials-link:hover {
+    background: none;
+}
