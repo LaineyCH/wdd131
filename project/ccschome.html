@@ -23,14 +23,11 @@
             <img id="header-logo" src="images/ccsc-logo.webp" height="236" width="300"
                 alt="Capital City Sewing Club Logo" aria-label="Capital City Sewing Club Logo">
             <h1 id="header-h1">Capital City Sewing Club</h1>
-            <img class="wide-socials-icon" src="images/fb-icon.webp" width="100" height="100">
-            <img class="wide-socials-icon" src="images/wa-icon.webp" width="100" height="100">
-            <img class="wide-socials-icon" src="images/email-icon.webp" width="100" height="100">
         </section>
         <!--mobile view: button for hamburger menu-->
         <button id="mobile-menu-button" aria-label="menu"></button>
         <!--mobile view: navigation-->
-        <nav>
+        <nav id="mobile-nav-menu">
             <a id="mobile-home" href='#'>Home</a>
             <a id="mobile-projects" href='#'>Projects</a>
             <a id="mobile-measures" href='#'>Measures &<br>Conversions</a>
@@ -40,35 +37,42 @@
 
     <aside>
         <!--wide view: navigation-->
-        <section id="wide-nav-menu">
-            <img class="aside-img" src="images/camel-block.webp" width="400" height="300" loading="lazy">
-            <h3 id="wide-home" class="aside-a" href='#'>Home</h3>
-            <img class="aside-img" src="images/rope-bowl.webp" width="400" height="300" loading="lazy">
-            <h3 id="wide-projects" class="aside-a" href='#'>Projects</h3>
-            <img class="aside-img" src="images/roo-pouch.webp" width="400" height="300" loading="lazy">
-            <h3 id="wide-conversions" class="aside-a" href='#'>Measures &<br>Conversions</h3>
-            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="400" height="300" loading="lazy">
-            <h3 id="wide-contact" class="aside-a" href='#'>Contact</h3>
-        </section>
+        <nav id="wide-nav-menu">
+            <img class="aside-img" src="images/camel-block.webp" width="400" height="300" loading="lazy"
+                alt="Camel Quilt Block" aria-label="Camel Quilt Block">
+            <a id="wide-home" class="aside-a" href='#'>Home</a>
+            <img class="aside-img" src="images/rope-bowl.webp" width="400" height="300" loading="lazy" alt="Rope Bowl"
+                aria-label="Rope Bowl">
+            <a id="wide-projects" class="aside-a" href='#'>Projects</a>
+            <img class="aside-img" src="images/roo-pouch.webp" width="400" height="300" loading="lazy"
+                alt="Roo Art Pouch" aria-label="Roo Art Pouch">
+            <a id="wide-conversions" class="aside-a" href='#'>Measures &<br>Conversions</a>
+            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="400" height="300" loading="lazy"
+                alt="Capital City Sewing Club Logo" aria-label="Capital City Sewing Club Logo">
+            <a id="wide-contact" class="aside-a" href='#'>Contact</a>
+        </nav>
     </aside>
 
     <main>
         <section id="page-content">
             <section id="about-ccsc">
                 <h2>All About Capital City Sewing Club</h2>
-                <img class="body-img" src="images/group.webp"  width="400" height="310" loading="lazy">
+                <img class="body-img" src="images/group.webp" width="400" height="310" loading="lazy"
+                    alt="Group of ladies holding up quilt blocks" aria-label="Group of ladies holding up quilt blocks">
                 <p>We are a culturally diverse group of woman with a common interest in sewing.</p>
             </section>
             <section id="projects">
                 <h2>What Are We Working On Now?</h2>
                 <section id="project2">
                     <h3>Hexie Flower Hot Pad</h3>
-                    <img class="body-img" src="images/hexie-pad.webp" width="400" height="300" loading="lazy">
+                    <img class="body-img" src="images/hexie-pad.webp" width="400" height="300" loading="lazy"
+                        alt="Hexie Flower Hot Pad" aria-label="Hexie Flower Hot Pad">
                     <p>This Japanese style pouch pattern comes in three different sizes.</p>
                 </section>
                 <section id="project1">
                     <h3>Diagonal Box Pouch</h3>
-                    <img class="body-img" src="images/box-pouch.webp" width="400" height="300" loading="lazy">
+                    <img class="body-img" src="images/box-pouch.webp" width="400" height="300" loading="lazy"
+                        alt="Hexie Flower Hot Pad" aria-label="Capital City Sewing Club Logo">
                     <p>This Japanese style pouch pattern comes in three different sizes.</p>
                 </section>
             </section>
@@ -76,12 +80,21 @@
     </main>
 
     <footer>
-        <!--Get current year and display with copyright information-->
-        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
-            &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
-
-        <!--Get the date that the document was last modified and display-->
-        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+        <section id="site-info">
+            <!--Display current year and copyright information-->
+            <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
+                &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
+            <!--Display the date that the document was last modified-->
+            <p>This webpage was last modified on <span id="lastmodified"></span></p>
+        </section>
+        <section id="socials">
+            <img class="socials-icon" src="images/fb-icon.webp" width="100" height="100" alt="FaceBook Icon"
+                aria-label="FaceBook Icon">
+            <img class="socials-icon" src="images/wa-icon.webp" width="100" height="100" alt="WhatsApp Icon"
+                aria-label="WhatsApp Icon">
+            <img class="socials-icon" src="images/email-icon.webp" width="100" height="100" alt="Email Icon"
+                aria-label="Email Icon">
+        </section>
     </footer>
 </body>
 
