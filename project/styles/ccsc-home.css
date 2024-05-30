@@ -2,10 +2,14 @@
 .body-img {
     display: block;
     margin: 1rem auto 1rem auto;
-    border: 2px solid black;
+    border: 6px solid white;
     max-width: 80%;
     height: auto;
     box-shadow: 5px 5px 5px rgb(147, 147, 147);
+}
+
+a.project-link:hover {
+    background: none;
 }
 
 /* Formatting for large view ports above 768px wide */

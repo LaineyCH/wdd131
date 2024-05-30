@@ -60,14 +60,10 @@
     }
 
     .aside-img {
-        margin: 0 auto;
+        margin: 2rem auto;
         max-width: 80%;
         height: auto;
-        padding: 1rem;
-    }
-
-    .body-img {
-        border: 2px solid black;
+        border: 6px solid white;
         box-shadow: 5px 5px 5px rgb(147, 147, 147);
     }
 

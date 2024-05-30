@@ -1,0 +1,59 @@
+.project-button {
+    font-family: var(--font-heading);
+    background-color: var(--pink-light);
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#buttons {
+    display: flex;
+    width: 100%;
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    border: 4px solid var(--turq-dark);
+    height: 95%;
+}
+
+a.project-link {
+    text-decoration: none;
+    color: black;
+}
+
+a.project-link:hover {
+    background: none;
+    font-weight: 400;
+}
+
+.project-img {
+    width: 100%;
+    border: 6px solid white;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+}
+
+.active {
+    font-weight: 900;
+    background-color: var(--turq-light);
+}
+
+/* Formatting for large view ports above 768px wide */
+@media (min-width: 768px) {
+
+    #projects-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-rows: 1fr;
+    }
+}

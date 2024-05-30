@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Project Page 2 - Capital City Sewing Club Projects">
+    <meta name="author" content="Elaine Henson">
+    <link rel="stylesheet" href="styles/ccsc.css">
+    <link rel="stylesheet" href="styles/ccsc-wide.css">
+    <link rel="stylesheet" href="styles/ccsc-projects.css">
+    <script src="scripts/ccsc.js" defer></script>
+    <script src="scripts/ccsc-projects.js" defer></script>
+    <title>Capital City Sewing Club Projects Page</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section id="header-title">
+            <img id="header-logo" src="images/ccsc-logo.webp" height="236" width="300"
+                alt="Capital City Sewing Club Logo" aria-label="Capital City Sewing Club Logo">
+            <h1 id="header-h1">Capital City Sewing Club</h1>
+        </section>
+        <!--mobile view: button for hamburger menu-->
+        <button id="mobile-menu-button" aria-label="menu"></button>
+        <!--mobile view: navigation-->
+        <nav id="mobile-nav-menu">
+            <a id="mobile-home" href='ccsc-home.html'>Home</a>
+            <a id="mobile-projects" href='ccsc-projects.html'>Projects</a>
+            <a id="mobile-measures" href='ccsc-measures.html'>Measures &<br>Conversions</a>
+            <a id="mobile-contact" href='ccsc-contact.html'>Contact</a>
+        </nav>
+    </header>
+
+    <aside>
+        <!--wide view: navigation-->
+        <nav id="wide-nav-menu">
+            <img class="aside-img" src="images/camel-block.webp" width="400" height="300" loading="lazy"
+                alt="Camel Quilt Block" aria-label="Camel Quilt Block">
+            <a id="wide-home" class="aside-a" href='ccsc-home.html'>Home</a>
+            <img class="aside-img" src="images/rope-bowl.webp" width="400" height="300" loading="lazy" alt="Rope Bowl"
+                aria-label="Rope Bowl">
+            <a id="wide-projects" class="aside-a" href='ccsc-projects.html'>Projects</a>
+            <img class="aside-img" src="images/roo-pouch.webp" width="400" height="300" loading="lazy"
+                alt="Roo Art Pouch" aria-label="Roo Art Pouch">
+            <a id="wide-conversions" class="aside-a" href='ccsc-measures.html'>Measures &<br>Conversions</a>
+            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="400" height="300" loading="lazy"
+                alt="Capital City Sewing Club Logo" aria-label="Capital City Sewing Club Logo">
+            <a id="wide-contact" class="aside-a" href='ccsc-contact.html'>Contact</a>
+        </nav>
+    </aside>
+
+    <main>
+        <section>
+            <section id="buttons">
+                <button id="all-button" class="project-button">All Projects</button>
+                <button id="quilt-button" class="project-button">Quilting Projects</button>
+                <button id="bag-button" class="project-button">Bag Patterns</button>
+                <button id="dress-button" class="project-button">Dressmaking Patterns</button>
+                <button id="decor-button" class="project-button">Decorative Projects</button>
+            </section>
+            <h2 id="projects-heading"></h2>
+            <section id="projects-content">
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section id="site-info">
+            <!--Display current year and copyright information-->
+            <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
+                &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
+            <!--Display the date that the document was last modified-->
+            <p>This webpage was last modified on <span id="lastmodified"></span></p>
+        </section>
+        <section id="socials">
+            <img class="socials-icon" src="images/fb-icon.webp" width="100" height="100" alt="FaceBook Icon"
+                aria-label="FaceBook Icon">
+            <img class="socials-icon" src="images/wa-icon.webp" width="100" height="100" alt="WhatsApp Icon"
+                aria-label="WhatsApp Icon">
+            <img class="socials-icon" src="images/email-icon.webp" width="100" height="100" alt="Email Icon"
+                aria-label="Email Icon">
+        </section>
+    </footer>
+</body>
+
+</html>
