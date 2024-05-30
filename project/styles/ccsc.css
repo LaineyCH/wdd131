@@ -47,14 +47,15 @@ aside {
 nav {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    width: 200px;
 }
 
 nav a {
     display: none;
-    width: 80%;
-    padding: 0.5rem 0 0.5rem 0;
-    margin-right: 50px;
-    margin-left: auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--pink-dark);
     color: white;
     font-family: var(--font-heading);
@@ -215,6 +216,7 @@ a:hover {
     #wide-nav-menu {
         width: 100%;
         height: 100%;
+        position: static;
         display: flex;
         flex-direction: column;
         margin: 170px auto 110px auto;
