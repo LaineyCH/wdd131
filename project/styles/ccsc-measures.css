@@ -69,6 +69,11 @@ fieldset {
     font-family: var(--font-page);
 }
 
+#quilt-table th {
+    font-family: var(--font-heading);
+    padding: 1rem;
+}
+
 #quilt-table table,
 #quilt-table td {
     padding: 1rem;
@@ -77,6 +82,12 @@ fieldset {
 #quilt-table table {
     margin-left: auto;
     margin-right: auto;
+}
+
+.table-head {
+    text-align: center;
+    color: var(--pink-dark);
+    font-size: 1.4em;
 }
 
 tr:nth-child(even) {background-color: var(--turq-light);}
