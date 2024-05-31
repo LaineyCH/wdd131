@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet.-->
+    <link rel="preload" fetchpriority="high" as="image" href="images/hexie-pad.webp" type="image/webp">
 </head>
 
 <body>
@@ -50,7 +53,7 @@
             <img class="aside-img" src="images/roo-pouch.webp" width="400" height="300" loading="lazy"
                 alt="Roo Art Pouch" aria-label="Roo Art Pouch">
             <a id="wide-conversions" class="aside-a" href='ccsc-measures.html'>Measures &<br>Conversions</a>
-            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="400" height="300" loading="lazy"
+            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="300" height="236" loading="lazy"
                 alt="Capital City Sewing Club Logo" aria-label="Capital City Sewing Club Logo">
             <a id="wide-contact" class="aside-a" href='ccsc-contact.html'>Contact</a>
         </nav>

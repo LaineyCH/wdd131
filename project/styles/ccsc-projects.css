@@ -48,7 +48,7 @@ a.project-link:hover {
     background-color: var(--turq-light);
 }
 
-/* Formatting for large view ports above 768px wide */
+/*----- Formatting for large view ports above 768px wide --------*/
 @media (min-width: 768px) {
 
     #projects-content {

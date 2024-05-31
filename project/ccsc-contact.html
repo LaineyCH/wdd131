@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Project Page 2 - Capital City Sewing Club Projects">
+        content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Project Page 4 - Capital City Sewing Club Contact">
     <meta name="author" content="Elaine Henson">
     <link rel="stylesheet" href="styles/ccsc.css">
     <link rel="stylesheet" href="styles/ccsc-wide.css">
-    <link rel="stylesheet" href="styles/ccsc-projects.css/">
+    <link rel="stylesheet" href="styles/ccsc-contact.css">
     <script src="scripts/ccsc.js" defer></script>
-    <script src="scripts/ccsc-projects.js" defer></script>
-    <title>Capital City Sewing Club Projects Page</title>
+    <script src="scripts/ccsc-contact.js" defer></script>
+    <title>Capital City Sewing Club Contact Page</title>
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,15 +50,34 @@
             <img class="aside-img" src="images/roo-pouch.webp" width="400" height="300" loading="lazy"
                 alt="Roo Art Pouch" aria-label="Roo Art Pouch">
             <a id="wide-conversions" class="aside-a" href='ccsc-measures.html'>Measures &<br>Conversions</a>
-            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="400" height="300" loading="lazy"
+            <img class="aside-img" class="aside-a" src="images/ccsc-logo.webp" width="300" height="236" loading="lazy"
                 alt="Capital City Sewing Club Logo" aria-label="Capital City Sewing Club Logo">
             <a id="wide-contact" class="aside-a" href='ccsc-contact.html'>Contact</a>
         </nav>
     </aside>
 
     <main>
-        <section id="projects-content">
+        <h2>Contact Us</h2>
+        <section id="socials-contact">
+            <a class="socials-link" id="fb" href="https://www.facebook.com" target="_blank"><img class="socials-icon"
+                    src="images/fb-icon-pink.webp" width="100" height="100" alt="FaceBook Icon"
+                    aria-label="FaceBook Icon"></a>
+            <a class="socials-link" id="wa" href="https://wa.link/xy65re" target="_blank"><img class="socials-icon"
+                    src="images/wa-icon-pink.webp" width="100" height="100" alt="WhatsApp Icon"
+                    aria-label="WhatsApp Icon"></a>
+            <a class="socials-link"  id="email" href="mailto:someone@ccsc.com" target="_blank"><img class="socials-icon"
+                    src="images/email-icon-pink.webp" width="100" height="100" alt="Email Icon" aria-label="Email Icon"></a>
         </section>
+        <form action="ccsc-thanks.html" method="get">
+            <fieldset class="contact-form">
+                <h2>Message Us</h2>
+                <label class="input-title">Your Name: <input type="text" id="name-input" required></label>
+                <label class="input-title">Your Email: <input type="email" id="email-input" required></label>                 
+                <label class="input-title"> Your Message:
+                <textarea id="textarea" name="textarea"></textarea></label>
+                <input type="submit" value="Send Message">
+            </fieldset>
+        </form>
     </main>
 
     <footer>

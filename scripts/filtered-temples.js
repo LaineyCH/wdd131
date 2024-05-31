@@ -257,7 +257,7 @@ function generate_temple_cards(filterPhrase) {
             filteredTemples = temples;
             pageHeading.textContent = "Temples | Home";
     };
-    changeActive(filterPhrase);
+    changeActive(filterPhrase, index);
     const htmlTemples = filteredTemples.map(
         (temple) =>
             `<div class="temple-card">

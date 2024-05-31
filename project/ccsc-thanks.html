@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Project Page 3 - Capital City Sewing Club Measures">
+        content="WDD 131 - Dynamic Web Fundamentals - Elaine Henson - Project Page 4 - Capital City Sewing Club Contact">
     <meta name="author" content="Elaine Henson">
     <link rel="stylesheet" href="styles/ccsc.css">
     <link rel="stylesheet" href="styles/ccsc-wide.css">
-    <link rel="stylesheet" href="styles/ccsc-measures.css">
     <script src="scripts/ccsc.js" defer></script>
-    <script src="scripts/ccsc-measures.js" defer></script>
-    <title>Capital City Sewing Club Measures Page</title>
+    <script src="scripts/ccsc-contact.js" defer></script>
+    <title>Capital City Sewing Club Contact Page</title>
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="message-submitted">
     <header>
         <section id="header-title">
             <img id="header-logo" src="images/ccsc-logo.webp" height="236" width="300"
@@ -57,70 +56,9 @@
     </aside>
 
     <main>
-        <section id="measures-content">
-            <form>
-                <fieldset class="measures-form">
-                    <h2>Convert Between Inches and Centimeters</h2>
-                    <label class="input-title">In Inches: <input type="number" id="inch" step=".01"></label>
-                    <button class="convert-button" id="convert-to-cm" type="button">Convert To Centimeters</button>
-                    <label class="input-title">In Centimeters: <input type="number" id="cm" step=".01"></label>
-                    <button class="convert-button" id="convert-to-inch" type="button">Convert To Inches</button>
-                </fieldset>
-            </form>
-        </section>
-        <section>
-            <section class="quilt-sizes">
-                <h2>Quilt Sizes</h2>
-                <table id="quilt-table">
-                    <tr>
-                        <th>
-                            <h3>Bed Size</h3>
-                        </th>
-                        <th>
-                            <h3>Inches</h3>
-                        </th>
-                        <th>
-                            <h3>Centimeters</h3>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Baby</th>
-                        <td>30 x 40"</td>
-                        <td>76 x 100 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Crib</th>
-                        <td>36 x 52"</td>
-                        <td>92 x 132 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Throw</th>
-                        <td>50 x 65"</td>
-                        <td>130 x 165 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Single</th>
-                        <td>70 x 90"</td>
-                        <td>180 x 230 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Double</th>
-                        <td>85 x 100"</td>
-                        <td>215 x 255 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Queen</th>
-                        <td>90 x 108"</td>
-                        <td>230 x 275 cm</td>
-                    </tr>
-                    <tr>
-                        <th>King</th>
-                        <td>110 x 110"</td>
-                        <td>280 x 280 cm</td>
-                    </tr>
-                </table>
-            </section>
-        </section>
+        <h2>Contact</h2>
+        <h3>Thank you, we have received your message.</h3>
+        <p>You have sent <span id="message-count"></span> message/s.</p>
     </main>
 
     <footer>

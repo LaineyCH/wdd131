@@ -182,9 +182,19 @@ function generate_project_cards(filterPhrase) {
             projectsHeading.textContent = "All Projects";
     };
     changeActive(filterPhrase);
-    const htmlProjects = filteredProjects.map(
-        (project) =>
-            `<a class="project-link" href="${project.projectUrl}" target="_blank">
+    const htmlProjects = filteredProjects.map((project, index) => {
+        return index < 2
+            ? `<a class="project-link" href="${project.projectUrl}" target="_blank">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>${project.projectName}</h3>
+                        <p>${project.description}</p>
+                    </div>
+                    <img class="project-img" data-src="${project.imageSrc}" alt="${project.projectName}" width="${project.imgWidth}">
+                    <p>Designer:<br>${project.designer}</p>
+                </div>
+            </a>`
+            : `<a class="project-link" href="${project.projectUrl}" target="_blank">
                 <div class="project-card">
                     <div class="project-info">
                         <h3>${project.projectName}</h3>
@@ -194,6 +204,7 @@ function generate_project_cards(filterPhrase) {
                     <p>Designer:<br>${project.designer}</p>
                 </div>
             </a>`
+    }
     );
     document.getElementById("projects-content").innerHTML = htmlProjects.join('');
     // remove the data-src attribute when the image has loaded
