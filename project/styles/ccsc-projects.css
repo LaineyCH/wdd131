@@ -18,8 +18,9 @@
 }
 
 .project-card {
-    display: grid;
-    grid-template-rows: 1fr auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
