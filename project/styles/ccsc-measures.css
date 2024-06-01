@@ -2,7 +2,6 @@
 .measures-form,
 .quilt-sizes {
     max-width: 380px;
-    min-width: 280px;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 2rem;
@@ -60,7 +59,6 @@ fieldset {
     /* to stop the browser from applying its own styles - need to add arrow to "please select" on selection input */
 }
 
-#quilt-table table,
 #quilt-table th,
 #quilt-table td {
     border: 1px solid var(--turq-dark);
@@ -74,12 +72,11 @@ fieldset {
     padding: 1rem;
 }
 
-#quilt-table table,
 #quilt-table td {
     padding: 1rem;
 }
 
-#quilt-table table {
+table#quilt-table {
     margin-left: auto;
     margin-right: auto;
 }
@@ -87,7 +84,7 @@ fieldset {
 .table-head {
     text-align: center;
     color: var(--pink-dark);
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 tr:nth-child(even) {background-color: var(--turq-light);}
