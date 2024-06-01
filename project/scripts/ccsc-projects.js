@@ -41,7 +41,7 @@ const projects = [
     },
     {
         projectName: "Amberley Dress",
-        description: "A stunning classic handbag that can be made from leather or fabric.",
+        description: "An easy to wear, classically shaped dress, suitable for beginner sewers.",
         designer: "Sussex Seamstress",
         imageSrc: "images/amberley-dress.webp",
         imgWidth: "300",
@@ -81,7 +81,7 @@ const projects = [
     },
     {
         projectName: "Orchidee Blouse",
-        description: "A smart but comfortabl blouse made with woven fabric.",
+        description: "A smart but comfortable blouse made with woven fabric.",
         designer: "Deer and Doe",
         imageSrc: "images/orchidee-blouse.webp",
         imgWidth: "400",
